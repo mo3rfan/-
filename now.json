@@ -1,0 +1,11 @@
+{
+  "name": "now dev poc",
+  "version": 2,
+  "public": true,
+  "builds": [{
+    "src": "app.py", "use": "@now/python", "config": { "maxLambdaSize": "42mb" }
+  }],
+  "routes": [{
+    "src": "/(.*)", "dest": "app.py"
+  }]
+}
