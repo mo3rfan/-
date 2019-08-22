@@ -5,7 +5,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g now
 RUN mkdir -p /home/app/
-ADD now /home/app/
+ADD now /home/app/now
 ADD app.py /home/app/
 ADD manage.py /home/app/
 ADD now.json /home/app/
